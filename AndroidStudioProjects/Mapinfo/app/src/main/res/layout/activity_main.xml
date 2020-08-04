@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scaleType="fitXY"
+        app:srcCompat="@drawable/bg"
+        android:foregroundGravity="center_horizontal"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Show Address!"
+        android:gravity="center_vertical"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="20dp"
+        android:padding="10dp"
+        android:textColor="#100F0F"
+        android:textSize="24sp"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="80dp"
+        android:text="Latitude: "
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:id="@+id/latitude"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/latitude"
+        android:layout_marginTop="10dp"
+        android:text="Latitude: "
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:id="@+id/longtu"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/longtu"
+        android:layout_marginTop="10dp"
+        android:text="Altitude: "
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:id="@+id/altitude"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/altitude"
+        android:layout_marginTop="10dp"
+        android:text="Accuracy: "
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:id="@+id/accuracy"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="30dp"
+        android:layout_below="@+id/accuracy"
+        android:layout_marginTop="10dp"
+        android:text="Address: \n \n1/9 street \ntown"
+        android:textColor="#100F0F"
+        android:textSize="20sp"
+        android:id="@+id/Address"/>
+
+
+
+</RelativeLayout>

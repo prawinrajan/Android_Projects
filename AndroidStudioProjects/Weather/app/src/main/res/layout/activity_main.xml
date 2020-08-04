@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="20dp"
+        android:text="What is your City!"
+        android:textColor="#050505"
+        android:textColorHighlight="#050505"
+        android:alpha="1"
+        android:textSize="25sp" />
+    <EditText
+        android:id="@+id/edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your city name here!"
+        android:textSize="20sp"
+        android:textColorHighlight="#050505"
+        android:padding="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_below="@+id/title"
+        android:textColor="#050505"/>
+
+    <Button
+        android:id="@+id/find"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edit"
+        android:layout_marginLeft="140dp"
+        android:layout_marginTop="10dp"
+        android:background="#9B7DD1"
+        android:padding="10dp"
+        android:text="find weather"
+        />
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:foregroundGravity="center_horizontal"
+        app:srcCompat="@drawable/app_background"
+        android:adjustViewBounds="false"
+        android:longClickable="false"
+        android:scaleType="centerCrop"
+        android:alpha="0.5"/>
+
+
+
+</RelativeLayout>
